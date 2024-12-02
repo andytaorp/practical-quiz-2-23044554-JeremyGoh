@@ -6,12 +6,12 @@ function App() {
   const [habits, setHabits] = useState([]);
 
   const handleAddHabit = (newHabit) => {
-    // Adding the new habit to the list
+    /
     setHabits([...habits, newHabit]);
   };
 
   const handleToggleHabit = (id) => {
-    // Toggling the habit's completed status
+    
     setHabits(
       habits.map((habit) =>
         habit.id === id ? { ...habit, isComplete: !habit.isComplete } : habit
@@ -20,7 +20,7 @@ function App() {
   };
 
   const handleDeleteHabit = (id) => {
-    // Deleting a habit by its ID
+    
     setHabits(habits.filter((habit) => habit.id !== id));
   };
 
