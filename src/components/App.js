@@ -6,7 +6,7 @@ function App() {
   const [habits, setHabits] = useState([]);
 
   const handleAddHabit = (newHabit) => {
-    /
+    
     setHabits([...habits, newHabit]);
   };
 
